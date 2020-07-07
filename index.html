@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body class="container" id="body">
+
+    <div id="h2">
+        <h2>Lista de tarefas</h2>
+    </div>
+
+    <div class="row" id="divisor">
+        <div id="faculdade" class="col-6">
+            <input type="text" class="form-control col-10" id="txtTarefaAdicionar" placeholder="Adicionar Tarefa"> 
+            <br>
+            <select id="opçõesAdicionar"  class="form-control col-10">
+                <option>--SELECIONE--</option> 
+                <option value="faculdade">Faculdade</option>
+                <option value="diaAdia">Dia a dia</option>
+            </select>
+
+            
+            <br>
+            <button class="btn btn-success" id="btnAdicionar">Adicionar</button>
+            <br><br>
+            <h4>Faculdade</h4>
+
+            <ul id="listaFaculdade">
+                
+            </ul>
+
+
+        </div>
+
+        <div id="diaAdia" class="col-6">
+            
+            <input type="text" class="form-control col-10" id="txtTarefaRemover" placeholder="Remover Tarefa">
+            <br>
+            <select id="opçõesRemover"  class="form-control col-10">
+                <option>--SELECIONE--</option>
+                <option value="faculdade">Faculdade</option>
+                <option value="diaAdia">Dia a dia</option>
+            </select>
+            <br>
+            <button class="btn btn-danger" id="btnRemover">Remover</button>
+            <br><br>
+            <h4>Dia a dia</h4>
+
+            <ul id="listaDiaAdia">
+                
+            </ul>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
